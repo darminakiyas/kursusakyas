@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.main');
+});
+Route::get('/login', function () {
+    return view('layouts.login.login');
+});
+Route::get('/register', function () {
+    return view('layouts.login.register');
 });
