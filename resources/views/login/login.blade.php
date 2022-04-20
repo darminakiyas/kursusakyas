@@ -1,4 +1,4 @@
-@extends('layouts.login.layouts.main')
+@extends('login.layouts.main')
 @section('container')
     <div class="login-box">
         <!-- /.login-logo -->
@@ -7,7 +7,17 @@
                 <a href="../../index2.html" class="h1"><b>Login</b></a>
             </div>
             <div class="card-body">
-                <p class="login-box-msg">Sign in to start your session</p>
+                {{-- <p class="login-box-msg">Sign in to start your session </p> --}}
+
+                @if (session()->has('success'))
+                    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                        {{ session('success') }}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                @endif
+
 
                 <form action="../../index3.html" method="post">
                     <div class="input-group mb-3">
