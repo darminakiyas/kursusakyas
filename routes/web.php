@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\KelasController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 
@@ -29,5 +30,6 @@ Route::get('/admin', function () {
 })->middleware('auth');
 
 Route::resource('/register', RegisterController::class);
+Route::resource('/kelas', KelasController::class);
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);

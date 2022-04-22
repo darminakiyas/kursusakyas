@@ -53,6 +53,14 @@
                         </li>
                     </ul>
                 </li>
+                <li class="nav-item">
+                    <a href="/kelas" class="nav-link">
+                        <i class="nav-icon far fas fa-chalkboard-teacher"></i>
+                        <p>
+                            Kelas
+                        </p>
+                    </a>
+                </li>
                 <li class="nav-header">EXAMPLES</li>
 
                 <li class="nav-item">

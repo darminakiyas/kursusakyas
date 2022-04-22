@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="/AdminLTE-3.2.0/dist/css/adminlte.min.css">
+
+    <!-- Datatables css-->
+    <link href="/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
 </head>
 <!--
 `body` tag options:
@@ -29,9 +32,9 @@
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
         <!-- Navbar -->
-        @include('admin.partials.navbar');
+        @include('admin.partials.navbar')
         <!-- /.navbar -->
-        @include('admin.partials.sidebar');
+        @include('admin.partials.sidebar')
         <!-- Main Sidebar Container -->
 
 
@@ -95,12 +98,16 @@
     <!-- AdminLTE -->
     <script src="/AdminLTE-3.2.0/dist/js/adminlte.js"></script>
 
+    <!-- Datatables -->
+    <script src="/datatables/jquery/jquery.dataTables.min.js"></script>
+    <script src="/datatables/js/datatables.js"></script>
+
     <!-- OPTIONAL SCRIPTS -->
-    <script src="/AdminLTE-3.2.0/plugins/chart.js/Chart.min.js"></script>
+    {{-- <script src="/AdminLTE-3.2.0/plugins/chart.js/Chart.min.js"></script> --}}
     <!-- AdminLTE for demo purposes -->
-    <script src="/AdminLTE-3.2.0/dist/js/demo.js"></script>
+    {{-- <script src="/AdminLTE-3.2.0/dist/js/demo.js"></script> --}}
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="/AdminLTE-3.2.0/dist/js/pages/dashboard3.js"></script>
+    {{-- <script src="/AdminLTE-3.2.0/dist/js/pages/dashboard3.js"></script> --}}
 </body>
 
 </html>
